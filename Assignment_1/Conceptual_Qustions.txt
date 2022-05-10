@@ -1,0 +1,38 @@
+-----FORMAT-----
+Question
+- Answer
+
+Question
+- Answer
+----------------
+
+What does CRUD stand for?
+- C.R.U.D stands for Create, Read, Update, Delete. It represents the types of operations possible in SQL
+
+What are System Databases?
+- System Databases are databases that are created by default whenever a Satabase Server is created. These include: master, tempdb, model, msdb and mssql
+
+What is OLAP and OLTP?
+- OLTP stands for Online Transactional Process, whereas OLAP stands for Online Analytical Process.
+  OLTP is an SQL Process that can be used to capture, store and process information fast by holding a small amount of data at a time. It can reload itself reliably every few seconds
+  OLAP is an SQL Process that acts as a Data Warehouse, where a large amount of data can be stored (can usually hold historical records of transactions). However due to its size, it can reliably reload every few days.
+  OLAPs usually get their data from OLTPs.
+  
+What is the Difference between DDL and DML?
+- DDL stands for Database Definition Language, whereas DML stands for Database Manipulation Language.
+  DDL allows for the creation or deletion of objects in the database
+  DML allows for the quering and modification of data in the database
+
+What does the "Like" keyword do?
+- The "Like" Keyword is a filters rows that may include (but are not necessarily identical to) a condition that we are setting
+
+List the wildcards available for the Like Operator.
+- % Represents 0 or more of any character
+- _ Represents 1 of any character
+- ^ Filters out entries that contain that character
+- [] Represents 1 of any character within the brckets
+- - Represents 1 of any character within the given range
+
+What's the difference between left join and inner join?
+- Inner Join returns only the rows from the 2 tables that satisfy the requirement set (data from both tables may get filtered out).
+- Left Join returns the rows from the left table (before the join) and the rows from the right table that meet the requirements and don't get filtered out (data from the right table only gets filtered out).
