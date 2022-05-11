@@ -1,0 +1,35 @@
+-----FORMAT-----
+Question
+- Answer
+
+Question
+- Answer
+----------------
+
+Difference between WHERE and HAVING?
+- WHERE to filter individual rows, but HAVING can be used to filter data that has been aggregated by aggregate functions
+- WHERE can be used with SELECT, UPDATE and DELETE, whereas HAVING can only be used for SELECT 
+- HAVING can only be used with GROUP BY, but WHERE is not restricted to that.
+
+
+Difference between RANK() and DENSE_RANK()?
+- RANK() ranks the rows of the table using an ORDER BY clause, while allowing for ties if the order value is the same. However, if a tie occurs, RANK() will continue enumeration of rank as if no tie took place at all (e.g. 1, 2, 2, 2, 2, 6, 7...)
+- DENSE_RANK() ranks the rows of the table using an ORDER BY clause, while allowing for ties. When a tie occurs, DENSE_RANK() will simply continue to the next highest integer (e.g. 1, 2, 2, 2, 2, 3...)
+
+
+What is correlated subquery?
+- A correlated subquery is a subquery that is dependent on the query that it is housed within
+
+Criteria for UNION and UNION ALL?
+- The SELECT clauses need to offer the same number of rows (if the upper table offers 1 column, and the lower one offers 2, then it will crash)
+- Each column from each table by order must have the hold the same data type (for instance if Column 1 from Table 1 houses integers, then Column 1 from Table 2 must also house integers)
+
+
+Difference between UNION and UNION ALL?
+- UNION eliminates duplicate rows, whereas UNION ALL doesn't
+- UNION sorts the first column automaticall, whereas UNION ALL doesn't
+- UNION cannot be used with recursive CTEs, whereas UNION ALL can be used with recursive CTEs
+
+
+Differene between UNION and JOIN?
+- UNION combines result sets vertically, whereas JOIN combines result sets horizontally.
