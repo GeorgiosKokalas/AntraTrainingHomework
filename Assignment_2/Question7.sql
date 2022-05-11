@@ -7,5 +7,5 @@ GO
 
 SELECT c.ContactName, COUNT(o.OrderID) [No of Orders]
 FROM Orders o JOIN Customers c ON c.CustomerID = o.CustomerID
-GROUP BY ContactName
+GROUP BY c.ContactName
 
