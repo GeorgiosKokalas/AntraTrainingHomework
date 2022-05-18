@@ -2,15 +2,12 @@ namespace Day2
 {
     internal class Program
     {
-        static int[] GenerateNumbers()
+        static int[] GenerateNumbers(int n=10)
         {
-            Console.WriteLine("Give Input:");
-            string input = Console.ReadLine();
-            string[] numbers = input.Split(" ");
-            int[] result = new int[numbers.Length];
+            int[] result = new int[n];
             for (int i = 0; i < result.Length; i++)
             {
-                result[i] = int.Parse(numbers[i]);
+                result[i] = i+1;
             }
 
             return result;
@@ -45,3 +42,4 @@ namespace Day2
         }
     }
 }
+
